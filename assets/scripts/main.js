@@ -1,26 +1,27 @@
-const coin1 = new coin1(1)
-const coin2 = new coin1(0)
-const coin3 = new coin1(1)
-const coin4 = new coin1(0)
+const coin1 = new Coin(1)
+const coin2 = new Coin(0)
+const coin3 = new Coin(1)
 
+console.log({ coin1, coin2, coin3})
 
 const coinWithoutClass = {
-
+    
+    
     state: 0,
-
+    
     flip: function () {
         console.log("coin.flip() has been invoked.")
     },
-
+    
     toString: function () {
         console.log("coin.toString() has been invoked.")
     },
-
+    
     toHTML: function () {
         let image = document.createElement('img')
-
+        
         console.log("coin.toHTML() has been invoked.")
-
+        
         return image
     }
 
